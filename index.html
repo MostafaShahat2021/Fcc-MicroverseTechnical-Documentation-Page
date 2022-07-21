@@ -10,18 +10,44 @@
     <main id="main-doc">
       <section class="main-section" id="Introduction"
       ><header>Introduction</header>
+      <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them
+
+      </p>
+      <code>if (condition_1) { statement_1; } else if (condition_2) {
+        statement_2; } else if (condition_n) { statement_n; } else {
+        statement_last; }</code>
+      <p> JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
     </section>
       <section class="main-section" id="What_you_should_already_know"
       ><header>What you should already know</header>
+      <p>
+        JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+      </p>
+      <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+      <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+        "otherValue";</code>
     </section>
       <section class="main-section" id="JavaScript_and_Java"
       ><header>JavaScript and Java</header>
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+      <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+      <code>function greetMe(yourName) { alert("Hello " + yourName); }
+        greetMe("World");</code>
     </section>
       <section class="main-section" id="Hello_world"
       ><header>Hello world</header>
+      
+      <p> The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+      <p> <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+        WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+        //statements } </code></p>
     </section>
       <section class="main-section" id="Variables"
       ><header>Variables</header>
+      <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+      <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+      <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+        not defined</code>
     </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
